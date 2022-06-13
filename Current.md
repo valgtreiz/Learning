@@ -5,7 +5,11 @@ Created by   : Odhy
 
 ## Pengelola Gaji
 
-Terdapat beberapa
+Output
+
+|No  |Dokumen|Tanda Tangan|
+|---:|---|---|
+|1   |Daftar Gaji|
 
 ### SIPKD Gaji
 
