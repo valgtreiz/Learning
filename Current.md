@@ -1,38 +1,46 @@
 # Task List
-Date created : June 11, 2022
 
-Created by   : Odhy
+wtf am I doing here
 
-## Pengelola Gaji
+## Output
 
-Output
-
-|No  |Dokumen|Tanda Tangan|
-|---:|---|---|
-|1   |Daftar Gaji|
+|No  |Dokumen|Jumlah|Peruntukan|
+|---:|---|---|---|
+|1   |Daftar Gaji |3 Rangkap|Pengelola Gaji, Bendahara, Induk (BPKA)|
+|2   |Slip Gaji   |46 berkas|ASN dan Tenaga Bantu|
 
 ## Timeline
 
 ```mermaid
 gantt
     dateFormat  D
-    title       Timeline
-    excludes    Sunday
+    title       Timeline Dokumen
+    %% excludes    Sunday
     
     %% Today's Marker styling
     todayMarker stroke-width:2px,stroke:#0f0,opacity:0.5
 
     section Gaji
-    Peremajaan gaji           : des1, 1, 20
-    Hitung gaji               : milestone, des2, after des1, 3d
-    Cetak Daftar gaji         : des3, after des2, 1d
-    Microsoft Excel           : des4, after des3, 20d
+    Peremajaan Gaji                 :            a1, 1, 15
+    Konfirmasi Peremajaan Gaji      : milestone, a2, after a1, 0d
+    Cetak Daftar Gaji               :            a3, 15, 20
+    Tanda Tangan Daftar Gaji        : milestone, a4, after a3, 0d
+    Kirim Daftar Gaji ke BPKA       :            a5, after a4, 30
+    Arsip Daftar Gaji               : milestone, a6, after a5, 0d
+    Cetak Potongan Gaji (BPD)       :            a7, 20, 26
+    Tanda Tangan Potongan Gaji      : milestone, a8, after a7, 0d
+    Pembuatan Slip Gaji             :            a9, after a8, 30
+    Pencairan                       : crit,      a10, after a9, 1d
+    Pembagian Slip Gaji             :            a11, after a10, 1d
+    Backup file Gaji                :            a12, after a11, 2d
+    Selesai                         : milestone, a13, after a12, 0d
+        
+    section Kepegawaian
+    Proses TPP                      : 
+    Presensi
     
 ```
-
-### SIPKD Gaji
-
-#### Aplikasi yang digunakan:
+## Aplikasi yang digunakan:
 
 |Nama|Fungsi|
 |---|---|
@@ -41,6 +49,3 @@ gantt
 |[SIMPEG](https://simpeg2.jogjaprov.go.id/)         |  |
 |[Presensi2](https://presensi2.jogjaprov.go.id/)    |  |
 |[ASN Memayu](https://asnmemayu.jogjaprov.go.id/)   |  |
-
-## Pengelola Kepegawaian
-
