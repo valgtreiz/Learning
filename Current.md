@@ -36,8 +36,8 @@ gantt
     Selesai                         : milestone, a13, after a12, 0d
         
     section Kepegawaian
-    Proses TPP                      : 
-    Presensi
+    %% Proses TPP                      : 
+    %% Presensi
     
 ```
 ## Aplikasi yang digunakan:
