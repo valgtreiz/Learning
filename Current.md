@@ -30,16 +30,32 @@ gantt
     Cetak Potongan Gaji (BPD)       :            a7, 20, 26
     Tanda Tangan Potongan Gaji      : milestone, a8, after a7, 0d
     Pembuatan Slip Gaji             :            a9, after a8, 30
-    Pencairan                       : crit,      a10, after a9, 1d
+    Pencairan Gaji                  : crit,      a10, after a9, 1d
     Pembagian Slip Gaji             :            a11, after a10, 1d
     Backup file Gaji                :            a12, after a11, 2d
     Selesai                         : milestone, a13, after a12, 0d
-        
+
     section Kepegawaian
-    %% Proses TPP                      : 
-    %% Presensi
+    Presensi Pegawai                :            b1, 1, 30
+    Proses TPP                      :            b2, 25, 5d
+    Pencairan TPP                   : crit,      b3, after b2, 3d
     
 ```
+
+## Pengelola Kepegawaian
+
+### Bulanan
+- TPP
+- Rekap Presensi
+
+|Tugas|Keterangan|
+|---|---|
+|Kenaikan Gaji Berkala|Dibuat paling tidak 2 bulan sebelumnya|
+|KP4|Dibuat tiap akhir tahun|
+|Dialog Kerja Individu|Diarindu|
+
+
+
 ## Aplikasi yang digunakan:
 
 |Nama|Fungsi|
