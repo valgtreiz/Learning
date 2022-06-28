@@ -36,7 +36,7 @@ gantt
     Selesai                         : milestone, a13, after a12, 0d
 
     section Kepegawaian
-    Presensi Pegawai                :            b1, 1, 30
+    Monitor Presensi Pegawai        :            b1, 1, 30
     Proses TPP                      :            b2, 25, 5d
     Pencairan TPP                   : crit,      b3, after b2, 3d
     
