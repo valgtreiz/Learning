@@ -17,7 +17,7 @@ class presensiBot:
 	def __init__(self, username, password):
 		self.username = username
 		self.password = password
-		self.bot = webdriver.Chrome(executable_path='D:\\0. Database\\Webdriver\\chromedriver.exe')
+		self.bot = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
 	def login(self):
 		bot = self.bot
